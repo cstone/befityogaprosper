@@ -32,7 +32,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'haml'
 gem 'formtastic'
 gem 'formtastic-bootstrap'
 gem 'carrierwave'

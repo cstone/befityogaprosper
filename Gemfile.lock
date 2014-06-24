@@ -236,7 +236,6 @@ DEPENDENCIES
   fog
   formtastic
   formtastic-bootstrap
-  haml
   haml-rails
   jquery-rails
   kaminari
