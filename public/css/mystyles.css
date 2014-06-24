@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,300,500,600");
+
+
+body {
+	font: 300 14px/1.7em "Raleway",Arial,sans-serif;
+	/*background-color: #001F98;*/
+	background: url(http://subtlepatterns.com/patterns/grey_wash_wall.png) repeat;
+	/*background: url(http://subtlepatterns.com/patterns/random_grey_variations.png) repeat;*/
+}
+
+header {
+	/*border-top: 2px solid #67FC02;*/
+    padding-bottom: 10px;
+}
+
+
+
+.container {
+	background-color: #FFFFFF;
+	/*width: 1100px;*/
+	max-width: 1100px;
+}
+
+
+.contactInfo {
+    padding: 10px;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    background: url(../img/breadcrumbs.png) repeat scroll 0% 0% transparent;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    float: left;
+    margin-right: 5px;
+    margin-left: -15px;
+  }
+  .navbar-nav {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    border-radius: 0;
+  }
+  .navbar-nav.pull-right {
+    float: right;
+    width: auto;
+  }
+  .navbar-toggle {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: none;
+  }
+  .nav-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/*************************************
+**************************************
+**************************************
+
+    BEGIN HEADER STYLES
+
+**************************************
+**************************************
+**************************************/
+.logobar {
+	padding: 10px 0;
+}
+
+
+
+/*************************************
+**************************************
+**************************************
+
+     END HEADER STYLES
+
+**************************************
+**************************************
+**************************************/
+
+
+
+
+
+/*************************************
+**************************************
+**************************************
+
+    BEGIN NAV STYLES
+
+**************************************
+**************************************
+**************************************/
+.navbar {
+	margin-bottom: 0;
+}
+
+.navcontainer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+/*************************************
+**************************************
+**************************************
+
+     END NAV STYLES
+
+**************************************
+**************************************
+**************************************/
+
+
+
+
+
+/*************************************
+**************************************
+**************************************
+
+    BEGIN CONTENT STYLES
+
+**************************************
+**************************************
+**************************************/
+
+
+.fancy-name {
+	font-family: 'Lora', serif;
+}
+
+.small-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.content-container {
+	padding: 15px;
+}
+
+.promo-container {
+    padding: 25px 0px 30px;
+    border-bottom: 1px solid #EEE;
+    background: url(../img/breadcrumbs.png) repeat scroll 0% 0% transparent;
+}
+
+.promo-container a {
+	/*color: #F1F1F1;*/
+	text-decoration:underline;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	min-height: 360px;
+}
+
+.jumbotron p {
+	/*color: #2B3E50;*/
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+	color: #485563;
+	font-size: 26px;
+}
+
+.fancyQuote {
+	font-size: 24px;
+}
+
+/*************************************
+**************************************
+**************************************
+
+     END CONTENT STYLES
+
+**************************************
+**************************************
+**************************************/
+
+
+
+
+
+
+/*************************************
+**************************************
+**************************************
+
+     BEGIN FOOTER STYLES
+
+**************************************
+**************************************
+**************************************/
+footer {
+	padding: 15px 15px 35px;
+	background-color: #00219C;
+	/*background:url(http://subtlepatterns.com/patterns/grey_wash_wall.png) repeat;*/
+	color: #F1F1F1;
+}
+
+footer p {
+	padding-top: 10px;
+}
+
+footer a {
+	/*color: #428BCA;*/
+	color: #FFFFFF;
+}
+
+footer .nav > li > a:hover {
+	background-color: #FFFFFF;
+}
+
+.signOff {
+	background-color: #001A80;
+	padding: 10px 15px;
+	color: #F1F1F1;
+    vertical-align: top;
+}
+
+.signOff a {
+    color: #F1F1F1;
+}
+
+.signOff input {
+    color: #001A80;
+}
+
+/*************************************
+**************************************
+**************************************
+
+     END FOOTER STYLES
+
+**************************************
+**************************************
+**************************************/
+
+
+.promo {
+	text-align: center;
+}
+
+.left > i, .right > i {
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    display: inline-block;
+}
+
+
+
+
+/* ========== FEATURES SECTION ========== */
+.feature {
+  float: left;
+}
+.feature .icon {
+  position: absolute;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.feature h2 {
+  font-size: 20px !important;
+  line-height: 48px;
+  margin-bottom: -5px;
+  position: relative;
+  padding-left: 75px;
+}
+.feature p {
+  color: #333333 !important;
+  position: relative;
+  padding-left: 75px;
+  margin-bottom: 10px;
+}
+.feature:hover {
+  color: #051833;
+}
+
+
+
+
