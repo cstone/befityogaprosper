@@ -1,4 +1,7 @@
 Befityogaprosper::Application.routes.draw do
+  resources :newsletters
+
+
   resources :events
   resources :pages
 
