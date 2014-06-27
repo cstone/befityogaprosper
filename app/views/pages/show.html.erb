@@ -1,25 +1,5 @@
-<p id="notice"><%= notice %></p>
+<% @page_header = "#{@page.title}" %>
 
-<p>
-  <b>Title:</b>
-  <%= @page.title %>
-</p>
-
-<p>
-  <b>Permalink:</b>
-  <%= @page.permalink %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @page.content %>
-</p>
-
-<p>
-  <b>Page image:</b>
-  <%= @page.page_image %>
-</p>
-
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<h3><%= @page.title %></h3>
+<%= image_tag @page.page_image.url, class: "img-float-right" if @page.page_image.url %>
+<%= @page.content.html_safe %>
