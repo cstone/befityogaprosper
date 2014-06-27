@@ -66,5 +66,8 @@ module Befityogaprosper
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = false
+
+    config.app_generators.scaffold_controller = :scaffold_controller
+
   end
 end
