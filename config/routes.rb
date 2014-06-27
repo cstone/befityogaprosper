@@ -1,4 +1,7 @@
 Befityogaprosper::Application.routes.draw do
+  resources :events
+
+
   mount Ckeditor::Engine => '/ckeditor'
 
   resources :pages
