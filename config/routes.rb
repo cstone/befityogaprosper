@@ -1,11 +1,11 @@
 Befityogaprosper::Application.routes.draw do
   resources :events
-
+  resources :pages
 
   mount Ckeditor::Engine => '/ckeditor'
 
-  resources :pages
 
+ root to: 'pages#show'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
