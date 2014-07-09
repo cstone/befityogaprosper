@@ -15,10 +15,10 @@
 <body>
 <div class="container">
   <header>
-    <div class="content-container">
+    <div class="masthead-container">
       <div class="row">
         <div class="col-sm-6">
-          <img src="http://befityoga.s3-website-us-east-1.amazonaws.com/img/logo.jpg" width="250" height="80">
+          <%= link_to image_tag('http://befityoga.s3-website-us-east-1.amazonaws.com/img/logo.jpg'), root_path  %>
         </div>
         <div class="col-sm-5 col-lg-offset-1">
           <div class="text-right">
@@ -30,8 +30,6 @@
   </header>
 
 <%= render 'layouts/structure/navigation' %>
-
-<%= render 'layouts/structure/carousel' %>
 
   <div class="content-container">
     <div class="row">
