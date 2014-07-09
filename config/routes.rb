@@ -8,10 +8,12 @@ Befityogaprosper::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
 
 
- root to: 'pages#show'
+ root to: 'pages#show', id: 'home'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  get ':id', to: 'pages#show', as: :page
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
