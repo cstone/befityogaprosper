@@ -69,5 +69,7 @@ module Befityogaprosper
 
     config.app_generators.scaffold_controller = :scaffold_controller
 
+    config.assets.precompile += ['mytheme.css']
+
   end
 end
