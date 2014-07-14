@@ -69,7 +69,7 @@ module Befityogaprosper
 
     config.app_generators.scaffold_controller = :scaffold_controller
 
-    config.assets.precompile = %w( *.js *.css )
+    #config.assets.precompile = %w( *.js *.css )
 
   end
 end
