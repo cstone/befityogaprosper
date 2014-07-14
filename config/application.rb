@@ -71,7 +71,8 @@ module Befityogaprosper
 
     config.assets.precompile += ['mytheme.css']
     config.assets.precompile += ['mystyles.css']
-    config.assets.precompile += ['mystyles.css.scss']
+    config.assets.precompile += ['application.css']
+    config.assets.precompile += ['active_admin.css']
 
   end
 end
