@@ -1,5 +1,5 @@
 <% @page_header = "#{@page.title}" %>
 
 <h3><%= @page.title %></h3>
-<%= image_tag @page.page_image.url, class: "img-float-right" if @page.page_image.url %>
+<%= image_tag @page.page_image.url, class: "img-thumbnail" if @page.page_image.url %>
 <%= @page.content.html_safe %>
