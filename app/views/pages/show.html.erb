@@ -1,4 +1,4 @@
 <% @page_header = "#{@page.title}" %>
 
-<%= @page.content.html_safe %>
 <%= image_tag @page.page_image.url, class: "imgFloatRight" if @page.page_image.url %>
+<%= @page.content.html_safe %>
