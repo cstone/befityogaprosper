@@ -5,10 +5,8 @@ application.js: application-e03f9c72d09a50da7abdd54a608e5448.js
 application/index.js: application-e03f9c72d09a50da7abdd54a608e5448.js
 active_admin.css: active_admin-463d558c4ab3722caeffc04af701c5e6.css
 active_admin/index.css: active_admin-463d558c4ab3722caeffc04af701c5e6.css
-application.css: application-a89fb753c65083503846a6cd3a6810f6.css
-application/index.css: application-a89fb753c65083503846a6cd3a6810f6.css
-mytheme.css: mytheme-a623bd3f3b0217f7b71632def899f79a.css
-mytheme/index.css: mytheme-a623bd3f3b0217f7b71632def899f79a.css
+application.css: application-55d7101598cfca130e47dd17a5c083aa.css
+application/index.css: application-55d7101598cfca130e47dd17a5c083aa.css
 ckeditor/application.js: ckeditor/application-d19507670f4827c18a2db3d178c57110.js
 ckeditor/application/index.js: ckeditor/application-d19507670f4827c18a2db3d178c57110.js
 ckeditor/config.js: ckeditor/config-b8ff36b86ef3168d3eaa0cc68769c4c9.js

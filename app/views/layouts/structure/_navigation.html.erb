@@ -14,6 +14,9 @@
         <ul class="nav navbar-nav">
           <li  class="<%= cpa(root_path) %>"><%= link_to 'Home', root_path %></li>
 
+          <li class="<%= cpa(page_path('about-us')) %>"><%= link_to 'About Us', page_path('about-us') %></li>
+          <li class="<%= cpa(page_path('services')) %>"><%= link_to 'Services', page_path('services') %></li>
+          <li class="<%= cpa(page_path('class-descriptions')) %>"><%= link_to 'Class Descriptions', page_path('class-descriptions') %></li>
           <li class="<%= cpa(page_path('services')) %>"><%= link_to 'Services', page_path('services') %></li>
         </ul>
       </div><!--/.nav-collapse -->
