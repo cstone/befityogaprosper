@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @staff.name %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%= @staff.bio %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= @staff.photo %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @staff.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_staff_path(@staff) %> |
+<%= link_to 'Back', staffs_path %>
