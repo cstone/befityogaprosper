@@ -1,29 +1,12 @@
-<h1>Listing staffs</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Bio</th>
-    <th>Photo</th>
-    <th>Active</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<h3>Staff</h3>
 <% @staffs.each do |staff| %>
-  <tr>
-    <td><%= staff.name %></td>
-    <td><%= staff.bio %></td>
-    <td><%= staff.photo %></td>
-    <td><%= staff.active %></td>
-    <td><%= link_to 'Show', staff %></td>
-    <td><%= link_to 'Edit', edit_staff_path(staff) %></td>
-    <td><%= link_to 'Destroy', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<div>
+  <p><%= staff.photo %></p>
+  <p><%= image_tag staff.photo.url, class: "imgFloatRight" if staff.photo.url %></p>
+  <p><strong><%= staff.name %></strong></p>
+  <p><%= staff.bio %></p>
+  <hr />
+</div>
 <% end %>
-</table>
 
-<br />
 
-<%= link_to 'New Staff', new_staff_path %>

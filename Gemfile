@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.16'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -20,8 +20,8 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'turbo-sprockets-rails3'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -31,13 +31,16 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0'
+gem 'railties'
 gem 'formtastic'
 gem 'formtastic-bootstrap'
 gem 'carrierwave'
 gem 'fog'
 gem 'rmagick', '~>2.13.2', :require => 'RMagick'
 gem 'figaro'
-gem 'activeadmin', github: 'gregbell/active_admin'
+#gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin', github: 'activeadmin'
 gem 'kaminari'
 gem 'ckeditor'
 gem 'mini_magick'
