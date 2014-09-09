@@ -33,4 +33,26 @@ ActiveAdmin.register Staff do
     f.actions
   end
 
+
+  show do |staff|
+    attributes_table do
+      row :id
+      row :first_name
+      row :last_name
+      row :title
+      row :order
+      row :bio do
+        staff.bio.html_safe
+      end
+      row :photo do
+        if staff.photo.url
+          image_tag staff.photo.url
+        end
+      end
+      row :created_at
+      row :updated_at
+    end
+    active_admin_comments
+  end
+
 end
