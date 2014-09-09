@@ -2,7 +2,7 @@ class StaffsController < ApplicationController
   # GET /staffs
   # GET /staffs.json
   def index
-    @staffs = Staff.all
+    @staffs = Staff.active.all
 
     respond_to do |format|
       format.html # index.html.erb
