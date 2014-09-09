@@ -1,10 +1,9 @@
 <h3>Staff</h3>
 <% @staffs.each do |staff| %>
 <div>
-  <p><%= staff.photo %></p>
   <p><%= image_tag staff.photo.url, class: "imgFloatRight" if staff.photo.url %></p>
-  <p><strong><%= staff.name %></strong></p>
-  <p><%= staff.bio %></p>
+  <p><strong><%= staff.first_name %> <%= staff.last_name %> <% if !staff.title.empty? %>- <%= staff.title %><% end %></strong></p>
+  <p><%= raw(staff.bio)  %></p>
   <hr />
 </div>
 <% end %>
