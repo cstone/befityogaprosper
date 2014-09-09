@@ -10,8 +10,9 @@ ActiveAdmin.register Staff do
     column :first_name
     column :last_name
     column :title
-    column :bio
-    column :order
+    column :bio do |bio|
+      simple_format bio.bio.truncate(75)
+    end
     column :active
     actions
   end
@@ -22,7 +23,7 @@ ActiveAdmin.register Staff do
       f.input :first_name, label: 'First Name'
       f.input :last_name, label: 'Last Name'
       f.input :title
-      f.input :order
+      f.input :active
       f.input :bio, :as => :ckeditor, :input_html => { :ckeditor => { :height => 400 } }
       f.input :photo, :as => :file, :hint => f.object.photo.present? \
     ? f.template.image_tag(f.object.photo.url(:thumb))
@@ -40,7 +41,7 @@ ActiveAdmin.register Staff do
       row :first_name
       row :last_name
       row :title
-      row :order
+      row :active
       row :bio do
         staff.bio.html_safe
       end
