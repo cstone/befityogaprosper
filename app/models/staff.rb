@@ -5,4 +5,5 @@ class Staff < ActiveRecord::Base
 
   default_scope order('last_name ASC')
 
+  scope :active, where(active: true)
 end
