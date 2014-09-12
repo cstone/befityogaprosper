@@ -14,6 +14,7 @@ ActiveAdmin.register Staff do
       simple_format bio.bio.truncate(75)
     end
     column :active
+    column :order
     actions
   end
 
@@ -24,6 +25,7 @@ ActiveAdmin.register Staff do
       f.input :last_name, label: 'Last Name'
       f.input :title
       f.input :active
+      f.input :order
       f.input :bio, :as => :ckeditor, :input_html => { :ckeditor => { :height => 400 } }
       f.input :photo, :as => :file, :hint => f.object.photo.present? \
     ? f.template.image_tag(f.object.photo.url(:thumb))
@@ -42,6 +44,7 @@ ActiveAdmin.register Staff do
       row :last_name
       row :title
       row :active
+      row :order
       row :bio do
         staff.bio.html_safe
       end
