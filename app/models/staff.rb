@@ -3,7 +3,7 @@ class Staff < ActiveRecord::Base
 
   mount_uploader :photo, StaffPhotoUploader
 
-  default_scope order('last_name ASC')
+  default_scope order('last_name ASC' && 'order ASC')
 
   scope :active, where(active: true)
 end
