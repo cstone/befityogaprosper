@@ -1,5 +1,7 @@
 ActiveAdmin.register Staff, :as => "Staff" do
 
+  menu :label => "Staff"
+
   index do
     selectable_column
     column :photo do |staff|
