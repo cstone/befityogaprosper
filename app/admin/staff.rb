@@ -1,4 +1,4 @@
-ActiveAdmin.register Staff do
+ActiveAdmin.register Staff, :as => "Staff" do
 
   index do
     selectable_column
