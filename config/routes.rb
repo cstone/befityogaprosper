@@ -11,7 +11,8 @@ Befityogaprosper::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
 
   match 'staff', to: 'staffs#index'
- root to: 'pages#show', id: 'home'
+ # root to: 'pages#show', id: 'home'
+ root to: 'home#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
